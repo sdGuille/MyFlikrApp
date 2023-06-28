@@ -13,6 +13,9 @@
 		CFCF49102A4C663000F8C8C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCF490F2A4C663000F8C8C0 /* Preview Assets.xcassets */; };
 		CFF10CCF2A4C964A00A004F5 /* Spalsh.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF10CCE2A4C964A00A004F5 /* Spalsh.swift */; };
 		CFF10CD12A4C99CF00A004F5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CFF10CD02A4C99CF00A004F5 /* .gitignore */; };
+		CFF10CD32A4CCBDC00A004F5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF10CD22A4CCBDC00A004F5 /* DetailView.swift */; };
+		CFF10CD52A4CCC0500A004F5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF10CD42A4CCC0500A004F5 /* MainViewModel.swift */; };
+		CFF10CD72A4CCC2100A004F5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF10CD62A4CCC2100A004F5 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		CFCF490F2A4C663000F8C8C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFF10CCE2A4C964A00A004F5 /* Spalsh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spalsh.swift; sourceTree = "<group>"; };
 		CFF10CD02A4C99CF00A004F5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CFF10CD22A4CCBDC00A004F5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CFF10CD42A4CCC0500A004F5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CFF10CD62A4CCC2100A004F5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 		CFCF49072A4C662F00F8C8C0 /* MyFlikrApp */ = {
 			isa = PBXGroup;
 			children = (
+				CFF10CD62A4CCC2100A004F5 /* Model.swift */,
+				CFF10CD42A4CCC0500A004F5 /* MainViewModel.swift */,
 				CFCF49082A4C662F00F8C8C0 /* MyFlikrAppApp.swift */,
 				CFCF490A2A4C662F00F8C8C0 /* MainView.swift */,
+				CFF10CD22A4CCBDC00A004F5 /* DetailView.swift */,
+				CFF10CCE2A4C964A00A004F5 /* Spalsh.swift */,
 				CFCF490C2A4C663000F8C8C0 /* Assets.xcassets */,
 				CFCF490E2A4C663000F8C8C0 /* Preview Content */,
-				CFF10CCE2A4C964A00A004F5 /* Spalsh.swift */,
 				CFF10CD02A4C99CF00A004F5 /* .gitignore */,
 			);
 			path = MyFlikrApp;
@@ -144,7 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF10CD52A4CCC0500A004F5 /* MainViewModel.swift in Sources */,
 				CFCF490B2A4C662F00F8C8C0 /* MainView.swift in Sources */,
+				CFF10CD32A4CCBDC00A004F5 /* DetailView.swift in Sources */,
+				CFF10CD72A4CCC2100A004F5 /* Model.swift in Sources */,
 				CFF10CCF2A4C964A00A004F5 /* Spalsh.swift in Sources */,
 				CFCF49092A4C662F00F8C8C0 /* MyFlikrAppApp.swift in Sources */,
 			);
