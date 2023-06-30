@@ -24,21 +24,18 @@ struct PhotosClass: Codable {
 // MARK: - Photo
 struct Photo: Codable, Identifiable {
     let id, owner, secret, server: String
-    let farm: Int
+
     let title: String
-    let ispublic, isfriend, isfamily: Int
+
     let description: Description
     let datetaken: String
-    let datetakengranularity: Int
-    let datetakenunknown, ownername: String
-    let urlM: String
-    let heightM, widthM: Int
+
+    let ownername: String
+    var urlM: String
 
     enum CodingKeys: String, CodingKey {
-        case id, owner, secret, server, farm, title, ispublic, isfriend, isfamily, description, datetaken, datetakengranularity, datetakenunknown, ownername
+        case id, owner, secret, server, title, description, datetaken, ownername
         case urlM = "url_m"
-        case heightM = "height_m"
-        case widthM = "width_m"
     }
 }
 
