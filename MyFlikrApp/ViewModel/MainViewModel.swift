@@ -15,11 +15,11 @@ class MainViewModel: ObservableObject {
 
     var filteredPhotos: [Photo] {
         guard !searchText.isEmpty else { return photosArray }
-        return photosArray.filter { $0.ownername.localizedCaseInsensitiveContains(searchText) }
+        return photosArray.filter { $0.title.localizedCaseInsensitiveContains(searchText) }
     }
     
     var urlString: String {
-        return "https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=7bea864cc89162404d8215d5061d1f03&extras=url_m%2C+description%2C+date_taken%2C+owner_name&format=json&nojsoncallback=1&auth_token=72157720886872990-d26dec84286df3d4&api_sig=faa4618efc24c6edfe2278a8356d152f"
+        return "https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=11c171a8dcd0bd059b184c1af0bac210&tags=animals&extras=url_m%2C+description%2C+date_taken%2C+owner_name&format=json&nojsoncallback=1&auth_token=72157720886978117-9c68dc87ccdc3498&api_sig=ac292f525d7531cb068213a5fc9211f6"
     }
 
     init() {

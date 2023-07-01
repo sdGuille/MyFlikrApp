@@ -18,7 +18,6 @@
 		CFF10CD72A4CCC2100A004F5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF10CD62A4CCC2100A004F5 /* Model.swift */; };
 		CFF10CDD2A4D08C000A004F5 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF10CDC2A4D08C000A004F5 /* RowView.swift */; };
 		CFF10CDF2A4D121A00A004F5 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF10CDE2A4D121A00A004F5 /* CustomError.swift */; };
-		CFF10CE12A4D19F300A004F5 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF10CE02A4D19F300A004F5 /* PracticeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		CFF10CD62A4CCC2100A004F5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CFF10CDC2A4D08C000A004F5 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		CFF10CDE2A4D121A00A004F5 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
-		CFF10CE02A4D19F300A004F5 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF9655652A50B47E0028A4D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF10CDC2A4D08C000A004F5 /* RowView.swift */,
+				CFF10CD22A4CCBDC00A004F5 /* DetailView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CFCF48FC2A4C662F00F8C8C0 = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +113,9 @@
 		CFF10CDA2A4D059700A004F5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CF9655652A50B47E0028A4D3 /* Helpers */,
 				CFF10CCE2A4C964A00A004F5 /* Spalsh.swift */,
-				CFF10CD22A4CCBDC00A004F5 /* DetailView.swift */,
 				CFCF490A2A4C662F00F8C8C0 /* MainView.swift */,
-				CFF10CDC2A4D08C000A004F5 /* RowView.swift */,
-				CFF10CE02A4D19F300A004F5 /* PracticeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,7 +206,6 @@
 				CFF10CD32A4CCBDC00A004F5 /* DetailView.swift in Sources */,
 				CFF10CD72A4CCC2100A004F5 /* Model.swift in Sources */,
 				CFF10CCF2A4C964A00A004F5 /* Spalsh.swift in Sources */,
-				CFF10CE12A4D19F300A004F5 /* PracticeView.swift in Sources */,
 				CFCF49092A4C662F00F8C8C0 /* MyFlikrAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
