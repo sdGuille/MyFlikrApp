@@ -12,7 +12,7 @@ enum CustomError: Error, LocalizedError {
     case invalidURL
     case serverError
     case invalidData
-    case unknow
+    case unknow(Error)
     
     var errorDescription: String? {
         switch self {
@@ -22,8 +22,8 @@ enum CustomError: Error, LocalizedError {
             return "There was an error with the server. Please try again later."
         case .invalidData:
             return "The user data is invalid. Please try again later."
-        case .unknow:
-            return localizedDescription
+        case .unknow(let error):
+            return error.localizedDescription
         }
     }
 }

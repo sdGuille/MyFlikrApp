@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     @StateObject var viewModel = MainViewModel()
     @State private var hasAppered = false
+    @State private var showAlert = false
     
     let colums = [GridItem(.adaptive(minimum: 100))]
     
@@ -22,6 +23,17 @@ struct MainView: View {
                             RowView(image: data.urlM)
                         }
                     }
+                }
+                .onReceive(viewModel.$error) { error in
+                    if error != nil {
+                        showAlert.toggle()
+                    }
+                }
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Error"),
+                        message: Text(viewModel.error?.localizedDescription ?? "")
+                    )
                 }
                 .searchable(text: $viewModel.searchText, prompt: "Search a name")
                 .navigationTitle("Photo Search")
