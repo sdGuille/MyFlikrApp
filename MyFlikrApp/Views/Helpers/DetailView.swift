@@ -29,25 +29,24 @@ struct DetailView: View {
                 ProgressView()
                     .progressViewStyle(.circular)
             }
-            HStack {
+            VStack(alignment: .leading) {
                 Text(title)
                     .font(.title2.bold())
+                VStack(alignment: .leading){
+                    Text("Owner: \(owner)")
+                    Text("taken at: \(date)")
+                    Text(description)
+                        .font(.caption)
+                }
+                .bold()
+                .font(.system(size: 14))
+                .foregroundColor(.black)
+                .clipShape(RoundedRectangle(cornerRadius: 7))
+                Spacer()
             }
             .padding(.top)
             
-            VStack(alignment: .leading) {
-                Text("Owner: \(owner)")
-                Text("taken at: \(date)")
-                Text(description)
-                    .font(.caption)
-            }
-            .bold()
-            .font(.system(size: 14))
-            .foregroundColor(.black)
-            .frame(width: 310, height: 125)
-            .background(.white.opacity(0.2))
-            .clipShape(RoundedRectangle(cornerRadius: 7))
-            Spacer()
+            
         }
         
     }
