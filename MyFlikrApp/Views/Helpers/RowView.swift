@@ -19,7 +19,7 @@ struct RowView: View {
                 ProgressView()
                     .progressViewStyle(.circular)
             }
-            .frame(width: 125, height: 125)
+            .frame(width: 135, height: 135)
         }
     }
 }
