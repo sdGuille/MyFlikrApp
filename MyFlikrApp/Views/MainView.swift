@@ -22,6 +22,11 @@ struct MainView: View {
                         NavigationLink(destination: DetailView(image: data.urlM, title: data.title, description: data.description.content, owner: data.ownername, date: data.datetaken)) {
                             RowView(image: data.urlM)
                         }
+                        .onAppear {
+                            if data.id == viewModel.photosArray.last?.id {
+                                viewModel.loadData()
+                            }
+                        }
                     }
                 }
                 .onReceive(viewModel.$error) { error in

@@ -12,6 +12,11 @@ class MainViewModel: ObservableObject {
     @Published var photosArray: [Photo] = []
     @Published var searchText = ""
     
+    
+    private let pageLimit = 50
+    private var page = 1
+    
+
 
     var filteredPhotos: [Photo] {
         guard !searchText.isEmpty else { return photosArray }
@@ -19,7 +24,7 @@ class MainViewModel: ObservableObject {
     }
     
     var urlString: String {
-        return "https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=11c171a8dcd0bd059b184c1af0bac210&tags=animals&extras=url_m%2C+description%2C+date_taken%2C+owner_name&format=json&nojsoncallback=1&auth_token=72157720886978117-9c68dc87ccdc3498&api_sig=ac292f525d7531cb068213a5fc9211f6"
+        return "https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=c2bdca1e6d5ef16cd159aa39c7f9fa88&safe_search=1&extras=url_m%2C+description%2C+date_taken%2C+owner_name&per_page=&page=&format=json&nojsoncallback=1&auth_token=72157720887166656-ebe0d237a3e3fbb8&api_sig=59011a86760cb98e5de23851e9113367"
     }
 
     init() {
@@ -39,14 +44,16 @@ extension MainViewModel {
     @MainActor
     func fetchData() async throws {
         do {
+            
             guard let url = URL(string: urlString) else { throw CustomError.invalidURL }
 
             let (data, response) = try await URLSession.shared.data(from: url)
             guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw CustomError.serverError }
             guard let results = try? JSONDecoder().decode(Photos.self, from: data) else { throw CustomError.invalidData }
-            self.photosArray = results.photos.photo
+            self.photosArray.append(contentsOf: results.photos.photo)
+            page += 1
 
-
+            
         } catch {
             self.error = error
         }
