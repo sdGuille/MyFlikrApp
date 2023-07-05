@@ -20,7 +20,8 @@ struct DetailView: View {
 //            Spacer()
             
             AsyncImage(url: URL(string: image)){ photo in
-                photo.resizable()
+                photo
+                    .resizable()
                     .aspectRatio(1440/1920,contentMode: .fill)
                     .clipped()
                     .cornerRadius(5)
