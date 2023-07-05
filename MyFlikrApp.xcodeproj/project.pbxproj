@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CFBC7E5D2A55EE4000783DE9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CFCF49052A4C662F00F8C8C0 /* MyFlikrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFlikrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCF49082A4C662F00F8C8C0 /* MyFlikrAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlikrAppApp.swift; sourceTree = "<group>"; };
 		CFCF490A2A4C662F00F8C8C0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				CFF10CD42A4CCC0500A004F5 /* MainViewModel.swift */,
+				CFBC7E5D2A55EE4000783DE9 /* README.md */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
