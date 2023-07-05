@@ -59,6 +59,7 @@
 		CFCF48FC2A4C662F00F8C8C0 = {
 			isa = PBXGroup;
 			children = (
+				CFBC7E5D2A55EE4000783DE9 /* README.md */,
 				CFCF49072A4C662F00F8C8C0 /* MyFlikrApp */,
 				CFCF49062A4C662F00F8C8C0 /* Products */,
 			);
@@ -107,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				CFF10CD42A4CCC0500A004F5 /* MainViewModel.swift */,
-				CFBC7E5D2A55EE4000783DE9 /* README.md */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
