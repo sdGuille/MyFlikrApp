@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFB0CB0B2AFEDB5400A36BB5 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0CB0A2AFEDB5400A36BB5 /* APIConstants.swift */; };
 		CFCF49092A4C662F00F8C8C0 /* MyFlikrAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF49082A4C662F00F8C8C0 /* MyFlikrAppApp.swift */; };
 		CFCF490B2A4C662F00F8C8C0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF490A2A4C662F00F8C8C0 /* MainView.swift */; };
 		CFCF490D2A4C663000F8C8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCF490C2A4C663000F8C8C0 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CFB0CB0A2AFEDB5400A36BB5 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		CFBC7E5D2A55EE4000783DE9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CFCF49052A4C662F00F8C8C0 /* MyFlikrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFlikrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCF49082A4C662F00F8C8C0 /* MyFlikrAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlikrAppApp.swift; sourceTree = "<group>"; };
@@ -56,6 +58,60 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		CFB0CB032AFED9A100A36BB5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CFB0CB082AFEDB2B00A36BB5 /* data */,
+				CFB0CB062AFEDAB400A36BB5 /* domain */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CFB0CB042AFED9C400A36BB5 /* PhotoDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoDetails;
+			sourceTree = "<group>";
+		};
+		CFB0CB052AFED9D200A36BB5 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoList;
+			sourceTree = "<group>";
+		};
+		CFB0CB062AFEDAB400A36BB5 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				CFB0CB072AFEDAD000A36BB5 /* model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		CFB0CB072AFEDAD000A36BB5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CFB0CB082AFEDB2B00A36BB5 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				CFB0CB092AFEDB3500A36BB5 /* api */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		CFB0CB092AFEDB3500A36BB5 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				CFB0CB0A2AFEDB5400A36BB5 /* APIConstants.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
 		CFCF48FC2A4C662F00F8C8C0 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +132,10 @@
 		CFCF49072A4C662F00F8C8C0 /* MyFlikrApp */ = {
 			isa = PBXGroup;
 			children = (
-				CFF10CDB2A4D05AC00A004F5 /* App */,
+				CFCF49082A4C662F00F8C8C0 /* MyFlikrAppApp.swift */,
+				CFB0CB052AFED9D200A36BB5 /* PhotoList */,
+				CFB0CB042AFED9C400A36BB5 /* PhotoDetails */,
+				CFB0CB032AFED9A100A36BB5 /* Core */,
 				CFF10CDA2A4D059700A004F5 /* Views */,
 				CFF10CD92A4D057F00A004F5 /* ViewModel */,
 				CFF10CD82A4D056000A004F5 /* Model */,
@@ -120,14 +179,6 @@
 				CFCF490A2A4C662F00F8C8C0 /* MainView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		CFF10CDB2A4D05AC00A004F5 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				CFCF49082A4C662F00F8C8C0 /* MyFlikrAppApp.swift */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +257,7 @@
 				CFCF490B2A4C662F00F8C8C0 /* MainView.swift in Sources */,
 				CFF10CDD2A4D08C000A004F5 /* RowView.swift in Sources */,
 				CFF10CD32A4CCBDC00A004F5 /* DetailView.swift in Sources */,
+				CFB0CB0B2AFEDB5400A36BB5 /* APIConstants.swift in Sources */,
 				CFF10CD72A4CCC2100A004F5 /* Model.swift in Sources */,
 				CFF10CCF2A4C964A00A004F5 /* Spalsh.swift in Sources */,
 				CFCF49092A4C662F00F8C8C0 /* MyFlikrAppApp.swift in Sources */,
